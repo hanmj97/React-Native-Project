@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View, Text, Button, onPressLearnMore} from "react-native" ;
+import {StyleSheet, View, Text, Button, Alert} from "react-native" ;
 
 const Main = () => {
     return (
@@ -9,7 +9,7 @@ const Main = () => {
 
             <Text style={styles.member2}>test123123123123</Text>
 
-            <Button onPress={onPressLearnMore} title="Learn More" color="#666666"/>
+            <Button onPress={() => Alert.alert('로그인 화면 이동')} title="Learn More" color="#666666"/>
         </View>
     );
 };
