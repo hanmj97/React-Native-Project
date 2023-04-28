@@ -1,11 +1,15 @@
 import React from 'react';
-import {StyleSheet, View, Text} from "react-native" ;
+import {StyleSheet, View, Text, Button, onPressLearnMore} from "react-native" ;
 
 const Main = () => {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>react-native를 사용해서 어플 만들기</Text>
             <Text style={styles.member}>팀원 : 한민재, 박준석</Text>
+
+            <Text style={styles.member2}>test123123123123</Text>
+
+            <Button onPress={onPressLearnMore} title="Learn More" color="#666666"/>
         </View>
     );
 };
@@ -29,6 +33,10 @@ const styles = StyleSheet.create({
     member: {
         color: colors.blue,
         fontSize: 25,
+    },
+    member2: {
+        color: colors.black,
+        fontSize: 30,
     },
 });
 
