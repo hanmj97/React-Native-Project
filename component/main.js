@@ -9,7 +9,7 @@ const Main = () => {
             <Text style={styles.member2}>test123123123123{"\n"}</Text>
 
             <Button onPress={() => Alert.alert('로그인 화면 이동')} title="Learn More" color="#666666"/>
-            {/* 알림창 라이브러리 찾아봐야할듯 project t2 on sex*/}
+            {/* 알림창 라이브러리 찾아봐야할듯 */}
         </View>
     );
 };
