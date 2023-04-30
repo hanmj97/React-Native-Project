@@ -6,8 +6,7 @@ const Main = () => {
         <View style={styles.container}>
             <Text style={styles.title}>react-native를 사용해서 어플 만들기</Text>
             <Text style={styles.member}>팀원 : 한민재, 박준석</Text>
-
-            <Text style={styles.member2}>test123123123123</Text>
+            <Text style={styles.member2}>test123123123123{"\n"}</Text>
 
             <Button onPress={() => Alert.alert('로그인 화면 이동')} title="Learn More" color="#666666"/>
         </View>
@@ -22,13 +21,13 @@ const colors = {
 
 const styles = StyleSheet.create({
     container: {
-      flex:1 ,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#ffffff',
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#ffffff',
     },
     title: {
-      fontSize: 25,
+        fontSize: 25,
     },
     member: {
         color: colors.blue,
