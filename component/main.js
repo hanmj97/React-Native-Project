@@ -19,15 +19,16 @@ const Main = () => {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>react-native를 사용해서 어플 만들기</Text>
-            <Text style={styles.member}>팀원 : 한민재, 박준석</Text>
-            <Text style={styles.member2}>test123123123123{"\n"}</Text>
+            <View id="header" style={styles.header}>
+
+            </View>
+            <View id="todolist" style={styles.todolist}>
+
+            </View>
 
             <Button onPress={async () => {
                 signup();
             }} title="Learn More" color="#666666"/>
-
-            {/* 알림창 라이브러리 찾아봐야할듯 123 */}
         </View>
     );
 };
@@ -45,17 +46,12 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#ffffff',
     },
-    title: {
-        fontSize: 25,
+    header: {
+
     },
-    member: {
-        color: colors.blue,
-        fontSize: 25,
-    },
-    member2: {
-        color: colors.black,
-        fontSize: 30,
-    },
+    todolist: {
+
+    }
 });
 
 export default Main;
